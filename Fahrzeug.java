@@ -1,17 +1,20 @@
-public abstract class Fahrzeug {
+public abstract class Fahrzeug extends Autovermietung implements Versicherbar{
     private int anzahlSitzplätze;
     private boolean vermietet;
     private double maximalGeschwindigkeit;
     private String farbe;
+    private final String kennzeichen;
 
-    public Fahrzeug(int anzahlSitzplätze, boolean vermietet, double maximalGeschwindigkeit, String farbe) {
+    public Fahrzeug(int anzahlSitzplätze, boolean vermietet, double maximalGeschwindigkeit, String farbe, String kennzeichen) {
         this.anzahlSitzplätze = anzahlSitzplätze;
         this.vermietet = vermietet;
         this.maximalGeschwindigkeit = maximalGeschwindigkeit;
         this.farbe = farbe;
+        this.kennzeichen = kennzeichen;
     }
 
     public abstract double berechneMietpreisProTag();
+
 
     public int getAnzahlSitzplätze() {
         return anzahlSitzplätze;
@@ -43,6 +46,22 @@ public abstract class Fahrzeug {
 
     public void setFarbe(String farbe) {
         this.farbe = farbe;
+    }
+
+
+    public String getKennzeichen() {
+        return kennzeichen;
+    }
+
+    @Override
+    public String toString() {
+        return "Fahrzeug{" +
+                "anzahlSitzplätze=" + anzahlSitzplätze +
+                ", maximalGeschwindigkeit=" + maximalGeschwindigkeit + "Km/h" +
+                ", farbe='" + farbe + '\'' +
+                ", vermietet='" + vermietet +
+                ", kennzeichen='" + kennzeichen + '\'' +
+                '}';
     }
 }
 

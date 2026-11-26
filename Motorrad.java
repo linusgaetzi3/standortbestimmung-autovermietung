@@ -1,6 +1,8 @@
 public class Motorrad extends Fahrzeug implements Versicherbar{
-    public Motorrad(int anzahlSitzplätze, boolean vermietet, double maximalGeschwindigkeit, String farbe) {
-        super(anzahlSitzplätze, vermietet, maximalGeschwindigkeit, farbe);
+
+
+    public Motorrad(int anzahlSitzplätze, boolean vermietet, double maximalGeschwindigkeit, String farbe, String kennzeichen) {
+        super(anzahlSitzplätze, vermietet, maximalGeschwindigkeit, farbe, kennzeichen);
     }
 
     @Override
