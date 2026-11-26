@@ -14,14 +14,17 @@ public class Autovermietung {
         }
     }
 
-    public void pruefeObFahrzeugVermietet() {
+    public int pruefeObFahrzeugVermietet() {
+        int anzahlFrei = 0;
         for (int i = 0; i < fahrzeugArrayList.size(); i++) {
             if (!fahrzeugArrayList.get(i).isVermietet()) {
                 System.out.println("Das " + i + " " + fahrzeugArrayList.get(i) + " ist noch nicht vermietet.");
+                anzahlFrei++;
             } else {
                 System.out.println("Das " + i + " " + fahrzeugArrayList.get(i) + " ist schon vermietet.");
             }
         }
+        return anzahlFrei;
     }
 
     public Fahrzeug sucheNachKennzeichen(String kennzeichen) {
