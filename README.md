@@ -14,7 +14,7 @@
 
 ## Reflexion
 
-- Ich hatte Spass bei der Aufgabe, auch wenn ich manchmal lange stuck bei etwasem war. 
+- Ich hatte Spass bei der Aufgabe, auch wenn ich manchmal lange stuck bei etwasem war. Wie z.B. bei der Excpetion behandlung oder bei der ArrayList 
 
 ## Produkt
 
